@@ -1,0 +1,122 @@
+﻿@model MVC_Proyect.Models.Entrega
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Entrega</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Repartidor.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Repartidor.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UsuarioId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UsuarioId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DireccionOrigen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DireccionOrigen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DireccionDestino)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DireccionDestino)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Producto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Producto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Indicaciones)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Indicaciones)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Peso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Peso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreDestino)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreDestino)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DpiDestino)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DpiDestino)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrecioPaquete)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrecioPaquete)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

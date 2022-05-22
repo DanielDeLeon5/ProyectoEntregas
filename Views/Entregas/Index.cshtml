@@ -1,0 +1,93 @@
+﻿@model IEnumerable<MVC_Proyect.Models.Entrega>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DireccionOrigen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DireccionDestino)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Producto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Indicaciones)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Peso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreDestino)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DpiDestino)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PrecioPaquete)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DireccionOrigen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DireccionDestino)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Producto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Indicaciones)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Peso)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreDestino)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DpiDestino)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrecioPaquete)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fecha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
